@@ -17,4 +17,5 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
-Route.get('/hello', 'HelloController.index')
+Route.get('/estabelecimento/listar', 'EstabelecimentoController.listar')
+Route.post('/estabelecimento/inserir', 'EstabelecimentoController.inserir')
